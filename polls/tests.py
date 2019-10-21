@@ -23,14 +23,14 @@ class TestPoll(APITestCase):
             password='test'
         )
 
-    def test_list(self):
-        request = self.factory.get(
-            self.uri, HTTP_AUTHORIZATION='Token {}'.format(self.token.key))
-        request.user = self.user
-        response = self.view(request)
-        self.assertEqual(response.status_code, 200,
-                         'Expected Response Code 200, received {0} instead.'
-                         .format(response.status_code))
+    # def test_list(self):
+    #     request = self.factory.get(
+    #         self.uri, HTTP_AUTHORIZATION='Token {}'.format(self.token.key))
+    #     request.user = self.user
+    #     response = self.view(request)
+    #     self.assertEqual(response.status_code, 200,
+    #                      'Expected Response Code 200, received {0} instead.'
+    #                      .format(response.status_code))
 
     def test_list2(self):
         self.client.login(username="test", password="test")
