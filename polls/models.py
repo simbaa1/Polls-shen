@@ -26,3 +26,6 @@ class Vote(models.Model):
 
 
 
+    def __str__(self):
+        return f'{self.choice} {self.voted_by}'
+
