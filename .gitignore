@@ -3,3 +3,4 @@ lib/
 build/
 lib64/
 venv/
+db.sqlite3
