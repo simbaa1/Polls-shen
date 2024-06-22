@@ -4,7 +4,7 @@ from .apiviews import ChoiceList, CreateVote, PollViewSet, UserCreate, LoginView
 from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
-router.register('polls', PollViewSet, base_name='polls')
+router.register('polls', PollViewSet, basename='polls')
 
 urlpatterns = [
     # path("polls/", PollList.as_view(), name="polls_list"),
