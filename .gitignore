@@ -5,3 +5,4 @@ lib64/
 venv/
 *.sqlite3
 
+.secret

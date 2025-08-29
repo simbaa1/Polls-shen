@@ -24,8 +24,6 @@ class Vote(models.Model):
     class Meta:
         unique_together = ("poll", "voted_by")
 
-
-
     def __str__(self):
         return f'{self.voted_by}'
 

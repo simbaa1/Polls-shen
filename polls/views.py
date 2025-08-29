@@ -18,3 +18,5 @@ def polls_detail(request, pk):
 
     return JsonResponse(data)
     
+def test_view():
+    pass
